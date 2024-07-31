@@ -1,16 +1,16 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:"poppins";
     box-sizing: border-box;
 }
-
 
 
 
 .body-container{
     width: 1200px;
     margin: 0 auto;
+   
 }
 
 nav{
@@ -138,12 +138,14 @@ ul.dropdown li:hover ul.more-drop{
 }
 
 .content h1{
-    font-size: 60px;
+    font-size: 55px;
     margin: 20px 0px;
+    color: #000032;
+    text-align: left;
 }
 
 .content p{
-    font-size: 30px;
+    font-size: 26px;
     margin: 20px 0;
     color: grey;
     font-family: arial;
@@ -227,14 +229,14 @@ ul.dropdown li:hover ul.more-drop{
     flex-direction: column;
     background:radial-gradient(circle at top, rgba(0, 0, 0, 0.147),#0101b73e ,rgba(0, 0, 0, 0.266));
     height:100vh;
-   width: 100vw;
+     width: auto;
   
    
     
 }
 
 .Services h2{
-    font-size: 60px;
+    font-size: 55px;
     padding: 20px 0px;
     margin-top: 6%;
     color: #000032;
@@ -329,28 +331,38 @@ ul.dropdown li:hover ul.more-drop{
     font-size: 13px;
     color: rgb(255, 255, 255);
     text-decoration: none;
-    padding: 10px ;
+    padding: 10px 20px;
     background-color: #0101b7;
     margin: 10px 0px;
     border-radius: 20px;
 }
 
-
+.team-card a:hover{
+    background-color: black;
+}
 
 .team-card .bio p{
     color: grey;
     text-align: center;
     font-size: 14px;
     margin: 10px 0px;
-    display: none;
+   
 }
 
 
 /* Testimonial Section */
 .testimonial-container{
     background-color: rgb(37, 37, 37);
-    height: 400px;
-    margin: 10% 0px;
+    height: 600px;
+    width: auto;
+    margin: 10% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+    
 }
 .testimonial-container h2{
     font-size: 45px;
@@ -359,8 +371,14 @@ ul.dropdown li:hover ul.more-drop{
   
 }
 
+ .testimonial-container i{
+    font-size: 55px;
+    color: rgb(228, 223, 249);
+}
+
 .feedbacks{
     display: flex;
+    align-items:center;
 
 }
 
@@ -376,4 +394,109 @@ ul.dropdown li:hover ul.more-drop{
     font-size: 15px;
     color: rgb(200, 200, 200);
     margin: 10px 0px;
+}
+ 
+
+
+ 
+
+/* Contact Us */
+.contact-us-container .heading-container{
+    margin-bottom: 0;
+}
+.contact-container{
+    background:radial-gradient(circle at top, rgba(0, 0, 0, 0.147),#0101b73e ,rgba(0, 0, 0, 0.266));
+    height: 600px;
+    margin: 0;
+    display: flex;
+    
+}
+.contact-details{
+    width: 60%;
+    padding: 10px 30px;
+}
+.contact-details p:first-child{
+    font-size: 20px;
+    margin: 10% 0px;
+    color:  rgb(37, 37, 37);
+}
+.contact-details strong{
+    font-size: 25px;
+    color: #00003f;
+   
+
+}
+
+.contact-details h3{
+    margin: 10% 0px;
+    color:  rgb(37, 37, 37);
+}
+
+.steps-container{
+    display: flex;
+   
+    
+}
+.step{
+    display: flex;
+    margin: 0px 20px;
+   
+}
+
+.step h2{
+    font-size: 30px;
+    padding: 0px 10px;
+    color:  rgb(37, 37, 37);
+}
+
+
+/* Creating Contact Form */
+.contact-form{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    width: 40%;
+    padding: 10px 2px ;
+    box-shadow: 2px 2px 8px grey;
+    position:relative;
+   right: 20px;
+   top: -80px;
+   border-radius: 30px;
+}
+.contact-form h2{
+    padding: 10px;
+    margin: 5px auto;
+}
+.contact-form input{
+    padding: 12px 10px;
+    width: 70%;
+    margin: 20px auto;
+    box-shadow: 2px 0px 8px grey;
+    border: 0;
+}
+
+.contact-form select{
+    padding: 10px 10px;
+    box-shadow: 2px 0px 8px grey;
+    border: 0;
+    width: 70%;
+    margin: 10px auto;
+}
+
+.contact-form button{
+    padding: 10px;
+    width: 50%;
+    margin: 20px auto;
+    background-color: #0101b7;
+    border: 0;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.contact-form button:hover{
+    background-color: black;
+   
 }
