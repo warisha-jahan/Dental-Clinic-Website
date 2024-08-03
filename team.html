@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="testimonial.css">
+    <link rel="stylesheet" href="responsive.css">
+
+
+    <title>Dental Pearl</title>
+
+    <style>
+        .content h1,
+        p {
+            text-align: center;
+        }
+
+        .content p {
+            font-size: 20px;
+        }
+
+        .team-heading-container{
+            height: 350px;
+            background: linear-gradient(-45deg, rgba(0, 0, 0, 0.144), #0101b742, rgba(0, 0, 0, 0.22)), url(medical/team/team.webp)no-repeat center center/cover;
+            ;
+        }
+
+        .team-body-container h2 {
+            font-size: 50px;
+            margin: 10% 0px;
+            color: #000032;
+            letter-spacing: -2px;
+        }
+
+        .our-team {
+            margin: 5% auto;
+            width: 800px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .our-team p {
+            text-align: justify;
+        }
+
+        .sections {
+            margin: 10% 0px;
+        }
+
+        .section {
+            text-align: justify;
+            margin-bottom: 50%;
+        }
+
+        .section img {
+            width: 100%;
+            max-width: 100%;
+            margin: 10px 0px;
+        }
+
+        .section p {
+            text-align: left;
+        }
+
+        .section label {
+            padding: 5px 8px;
+            background-color: #0101b7;
+            width: fit-content;
+            color: white;
+            margin: 5px 0px;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        .section input[type="radio"] {
+            display: none;
+        }
+
+        .section .docter-detail {
+            max-height: 0;
+            overflow: none;
+            transition: max-height 0.6s;
+            visibility: hidden;
+        }
+
+        .section input[type="radio"]:checked+label+.docter-detail {
+            max-height: 400px;
+            box-shadow: 2px 2px 8px grey;
+            padding: 20px;
+            margin: 0;
+            color: gray;
+            visibility: visible;
+        }
+
+
+        .about-team {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* margin: 10% 0; */
+            height: 50vh;
+
+
+        }
+    
+
+        .about-team .content h1 {
+            text-align: left;
+            line-height: 55px;
+            font-size: 45px;
+        }
+
+        .about-team .content p {
+            text-align: left;
+        }
+
+        .about-team img{
+            max-width: 50%;
+            margin: 0px 20px;
+            padding: 0px 40px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo"><a href="index.html"><img src="medical/1.jpg"></a></div>
+
+        <div class="hamburger" data-state="closed">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="">Services <i class="fa fa-caret-down"></i></i></a>
+                    <ul class="dropdown">
+                        <li><a href="">General Dentistry <i class="fa fa-caret-right"></i></a>
+                            <ul class="more-drop">
+                                <li><a href="">Routine Check-ups</a></li>
+                                <li><a href="">Cleanings</a></li>
+                                <li><a href="">Fillings</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a href="">Cosmetic Dentistry <i class="fa fa-caret-right"></i></a>
+                            <ul class="more-drop">
+                                <li><a href="">Teeth Whitening</a></li>
+                                <li><a href="">Veneers</a></li>
+                                <li><a href="">Invisalign</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Restorative Dentistry <i class="fa fa-caret-right"></i></a>
+                            <ul class="more-drop">
+                                <li><a href="">Crowns</a></li>
+                                <li><a href="">Bridges</a></li>
+                                <li><a href="">Implants</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+
+        </div>
+    </nav>
+    <main>
+        <header class="header team-body-container body-container">
+            <div class="content">
+                <h1>
+                    Our Dedicated <br>Dental Professionals
+                </h1>
+                <p>We Pride Ourselves On Having A Team Of Highly Skilled And Compassionate Dental Professionals.</p>
+
+            </div>
+        </header>
+        <section class="team-body-container body-container">
+            <div class="heading-container team-heading-container">
+            </div>
+            <div class="our-team">
+                <p>Our team is committed to providing exceptional care and personalized treatment to ensure every
+                    patient achieves optimal dental health. With a focus on continuous education and the latest
+                    advancements in dental technology, our professionals are equipped to handle a wide range of dental
+                    needs. your smile is our top priority.</p>
+            </div>
+            <h2>Meet The <br>Senior Doctors</h2>
+            <div class="sections ">
+                <div class="section">
+                    <img src="medical/dr3.jpg">
+                    <h3>Dr. Ahmed Siddiqui</h3>
+                    <h4>Chief Dental Surgeon</h4>
+                    <input type="radio" id="docter1" name="accordion">
+                    <label for="docter1">View More <i class="fa fa-plus"></i>
+                    </label>
+                    <div class="docter-detail">
+                        <p>Dr. Ahmed Siddiqui is our Chief Dental Surgeon with over 20 years of experience in general
+                            and restorative dentistry. His expertise in complex dental procedures ensures the highest
+                            quality of care for our patients.</p>
+                    </div>
+
+                </div>
+                <div class="section">
+                    <img src="medical/docter1.jpg">
+                    <h3>Dr. Sara Khan</h3>
+                    <h4>Senior Cosmetic Dentist</h4>
+                    <input type="radio" id="docter2" name="accordion">
+                    <label for="docter2">View More <i class="fa fa-plus"></i>
+                    </label>
+                    <div class="docter-detail">
+                        <p>Dr. Sara Khan specializes in cosmetic dentistry, transforming smiles with her artistic eye
+                            and meticulous attention to detail. With over 18 years of experience, she creates stunning,
+                            natural-looking results for her patients.</p>
+                    </div>
+
+                </div>
+                <div class="section">
+                    <img src="medical/dr1.jpg">
+                    <h3>Dr. Usman Ali</h3>
+                    <h4>Senior Orthodontist</h4>
+                    <input type="radio" id="docter3" name="accordion">
+                    <label for="docter3">View More <i class="fa fa-plus"></i>
+                    </label>
+                    <div class="docter-detail">
+                        <p>Dr. Usman Ali is our Senior Orthodontist, with over 15 years of experience in orthodontics.
+                            He specializes in braces and Invisalign, helping patients achieve beautifully aligned
+                            smiles.</p>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+            <h2>Meet Some Of Our 35+<br>Team Members</h2>
+            <div class="sections ">
+
+                <div class="section">
+                    <img src="medical/team/Dr.-Faraz-Khalid.png">
+                    <h3>Dr. Sarah Ahmed</h3>
+                    <h4>Specialist in General Dentistry</h4>
+                    <input type="radio" id="dr1" name="accordion">
+                    <label for="dr1">View More <i class="fa fa-plus"></i>
+                    </label>
+                    <div class="docter-detail">
+                        <p>Our team of experienced dentists is dedicated to providing the highest quality of care for
+                            all
+                            your dental needs.</p>
+                    </div>
+
+                </div>
+                <div class="section">
+                    <img src="medical/team/Dr.-Faraz-Khalid.png">
+                    <h3>Dr. Sarah Ahmed</h3>
+                    <h4>Specialist in General Dentistry</h4>
+                    <input type="radio" id="dr2" name="accordion">
+                    <label for="dr2">View More <i class="fa fa-plus"></i>
+                    </label>
+                    <div class="docter-detail">
+                        <p>Our team of experienced dentists is dedicated to providing the highest quality of care for
+                            all
+                            your dental needs.</p>
+                    </div>
+
+                </div>
+                <div class="section">
+                    <img src="medical/team/Dr.-Faraz-Khalid.png">
+                    <h3>Dr. Sarah Ahmed</h3>
+                    <h4>Specialist in General Dentistry</h4>
+                    <input type="radio" id="docter3" name="accordion">
+                    <label for="docter3">View More <i class="fa fa-plus"></i>
+                    </label>
+                    <div class="docter-detail">
+                        <p>Our team of experienced dentists is dedicated to providing the highest quality of care for
+                            all
+                            your dental needs.</p>
+                    </div>
+
+                </div>
+                <div class="section">
+                    <img src="medical/team/Dr.-Faraz-Khalid.png">
+                    <h3>Dr. Sarah Ahmed</h3>
+                    <h4>Specialist in General Dentistry</h4>
+                    <input type="radio" id="docter4" name="accordion">
+                    <label for="docter4">View More <i class="fa fa-plus"></i>
+                    </label>
+                    <div class="docter-detail">
+                        <p>Our team of experienced dentists is dedicated to providing the highest quality of care for
+                            all
+                            your dental needs.</p>
+                    </div>
+
+                </div>
+                <div class="section">
+                    <img src="medical/team/Dr.-Faraz-Khalid.png">
+                    <h3>Dr. Sarah Ahmed</h3>
+                    <h4>Specialist in General Dentistry</h4>
+                    <input type="radio" id="docter5" name="accordion">
+                    <label for="docter5">View More <i class="fa fa-plus"></i>
+                    </label>
+                    <div class="docter-detail">
+                        <p>Our team of experienced dentists is dedicated to providing the highest quality of care for
+                            all
+                            your dental needs.</p>
+                    </div>
+
+                </div>
+                <div class="section">
+                    <img src="medical/team/Dr.-Faraz-Khalid.png">
+                    <h3>Dr. Sarah Ahmed</h3>
+                    <h4>Specialist in General Dentistry</h4>
+                    <input type="radio" id="docter3" name="accordion">
+                    <label for="docter3">View More <i class="fa fa-plus"></i>
+                    </label>
+                    <div class="docter-detail">
+                        <p>Our team of experienced dentists is dedicated to providing the highest quality of care for
+                            all
+                            your dental needs.</p>
+                    </div>
+
+                </div>
+                <div class="section">
+                    <img src="medical/team/Dr.-Faraz-Khalid.png">
+                    <h3>Dr. Sarah Ahmed</h3>
+                    <h4>Specialist in General Dentistry</h4>
+                    <input type="radio" id="docter3" name="accordion">
+                    <label for="docter3">View More <i class="fa fa-plus"></i>
+                    </label>
+                    <div class="docter-detail">
+                        <p>Our team of experienced dentists is dedicated to providing the highest quality of care for
+                            all
+                            your dental needs.</p>
+                    </div>
+
+                </div>
+                <div class="section">
+                    <img src="medical/team/Dr.-Faraz-Khalid.png">
+                    <h3>Dr. Sarah Ahmed</h3>
+                    <h4>Specialist in General Dentistry</h4>
+                    <input type="radio" id="docter3" name="accordion">
+                    <label for="docter3">View More <i class="fa fa-plus"></i>
+                    </label>
+                    <div class="docter-detail">
+                        <p>Our team of experienced dentists is dedicated to providing the highest quality of care for
+                            all
+                            your dental needs.</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="about-team team-body-container body-container">
+            <div class="content">
+                <h1>
+                    Our Commitment to Excellence
+                </h1>
+                <p>At Dental Pearl, Our team is not only skilled but also deeply committed to providing
+                    compassionate and individualized care. We continuously strive to create a welcoming environment
+                    where every patient feels valued and understood.
+
+                </p>
+
+
+            </div>
+
+            
+                <img src="medical/about-team.jpg" alt="">
+         
+        </section>
+        <section class="contact-us-container body-container">
+            <div class="heading-container">
+                <p>Contact Us</p>
+                <h2>Ready to achieve a healthier, <br>brighter smile?</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-details">
+                    <p>We’re happy to answer any questions you may have and help you determine which of our services
+                        best
+                        fit your needs.</p>
+                    <strong>Call Us At +1-234-567-8901</strong>
+                    <h3>What Happens Next?</h3>
+                    <div class="steps-container">
+                        <div class="step">
+                            <h2>1</h2>
+                            <p>Comprehensive Dental Exam</p>
+                        </div>
+                        <div class="step">
+                            <h2>2</h2>
+                            <p>Discuss Treatment Options</p>
+                        </div>
+                        <div class="step">
+                            <h2>3</h2>
+                            <p>Begin Your Treatment</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="contact-form">
+                    <h2>Schedule an Appointment</h2>
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                    <input type="email" name="your-email" id="email" placeholder="Your Email">
+                    <input type="text" placeholder="Phone">
+                    <select name="services" id="services">
+                        <option value="">Select Options</option>
+                        <option value="Routine Check-ups">Routine Check-ups</option>
+                        <option value="Teeth Whitening">Teeth Whitening</option>
+                        <option value="Orthodontics">Orthodontics</option>
+                        <option value="Dental Implants">Dental Implants</option>
+                        <option value="Pediatric Dentistry">Pediatric Dentistry</option>
+                        <option value="Cleanings">Cleanings</option>
+                        <option value="Fillings">Fillings</option>
+                        <option value="Invisalign">Invisalign</option>
+                        <option value="Invisalign">Crowns</option>
+                        <option value="Invisalign">Bridges</option>
+                        <option value="Invisalign">Implants</option>
+                    </select>
+                    <button type="submit">Submit</button>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container body-container">
+            <div class="footer-section logo-section">
+                <h2>Dental Pearl</h2>
+                <p>we are dedicated to providing exceptional dental care in a warm and welcoming environment. Our team
+                    of experienced professionals is committed to ensuring your comfort and delivering the highest
+                    quality treatments tailored to your unique needs.</p>
+            </div>
+            <div class="footer-section contact-footer-section">
+                <h3>Contact Us</h3>
+                <li>Lahore, Pakistan</li>
+                <li>+92 123 4567890</li>
+                <li>info@dentalpearl.com</li>
+            </div>
+            <div class="footer-section services-footer-section">
+                <h3>Services</h3>
+                <li><a href="">Routine Check-ups</a></li>
+                <li><a href="">Invisalign</a></li>
+                <li><a href="">Teeth Whitening</a></li>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
