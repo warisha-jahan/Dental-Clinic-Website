@@ -28,9 +28,9 @@
             font-size: 20px;
         }
 
-        .team-heading-container{
+        .team-heading-container {
             height: 350px;
-            background: linear-gradient(-45deg, rgba(0, 0, 0, 0.144), #0101b742, rgba(0, 0, 0, 0.22)), url(medical/team/team.webp)no-repeat center center/cover;
+            background: linear-gradient(-45deg, rgba(0, 0, 0, 0.144), #0101b742, rgba(0, 0, 0, 0.22)), url(medical/team/team.webp)no-repeat top center/cover;
             ;
         }
 
@@ -49,7 +49,7 @@
         }
 
         .our-team p {
-            text-align: justify;
+            text-align: left;
         }
 
         .sections {
@@ -79,6 +79,7 @@
             margin: 5px 0px;
             text-decoration: none;
             font-size: 12px;
+            cursor: pointer;
         }
 
         .section input[type="radio"] {
@@ -108,10 +109,14 @@
             align-items: center;
             /* margin: 10% 0; */
             height: 50vh;
+            margin: 10% auto ;
 
 
         }
-    
+        .about-team .content{
+            padding: 20px;
+        }
+
 
         .about-team .content h1 {
             text-align: left;
@@ -120,13 +125,122 @@
         }
 
         .about-team .content p {
-            text-align: left;
+            text-align:left;
+            font-size: 18px;
         }
 
-        .about-team img{
+        .about-team img {
             max-width: 50%;
-            margin: 0px 20px;
-            padding: 0px 40px;
+          
+          
+        }
+
+
+
+
+
+        /* Responsive Style  */
+
+
+
+        @media (max-width:980px) {
+            .content p {
+                font-size: 16px;
+            }
+
+            .our-team {
+                width: auto;
+                padding: 20px;
+            }
+
+            .our-team p {
+                font-size: 16px;
+            }
+
+            .section h4 {
+                font-size: 15px;
+            }
+
+            .section p {
+                font-size: 14px;
+            }
+
+            .team-body-container h2 {
+                font-size: 30px;
+                padding: 20px;
+
+            }
+            .about-team{
+                flex-direction: column-reverse;
+                margin: 20% auto;
+            }
+            .about-team .content{
+                padding: 0px 15px;
+            }
+            .about-team img{
+                max-width: 100%;
+                padding: 0px 15px;
+            }
+
+            .about-team .content h1 {
+                text-align: left;
+                line-height: 35px;
+                font-size: 35px;
+            }
+
+            .about-team .content p {
+                font-size: 16px;
+            }
+
+
+        }
+
+
+        @media(max-width: 750px) {
+
+
+            .our-team p {
+                font-size: 14px;
+            }
+          
+            .about-team .content{
+                padding: 20px 40px;
+            }
+
+            .about-team .content h1 {
+
+                line-height: 30px;
+                font-size: 25px;
+            }
+
+            .about-team .content p {
+                font-size: 16px;
+               
+            }
+            
+           
+            
+        }
+
+        @media (max-width:400px){
+            .content p {
+                font-size: 13px;
+            }
+            .about-team{
+                margin-top: 0;
+                margin-bottom:20%;
+            }
+
+            .about-team .content p {
+                font-size: 13px;
+               
+            }
+            .about-team .content{
+                padding: 0px 15px;
+            }
+            .about-team img{
+                padding: 0px 15px;
+            }
         }
     </style>
 
@@ -282,8 +396,8 @@
                     <img src="medical/team/Dr.-Faraz-Khalid.png">
                     <h3>Dr. Sarah Ahmed</h3>
                     <h4>Specialist in General Dentistry</h4>
-                    <input type="radio" id="docter3" name="accordion">
-                    <label for="docter3">View More <i class="fa fa-plus"></i>
+                    <input type="radio" id="dr3" name="accordion">
+                    <label for="dr3">View More <i class="fa fa-plus"></i>
                     </label>
                     <div class="docter-detail">
                         <p>Our team of experienced dentists is dedicated to providing the highest quality of care for
@@ -296,8 +410,8 @@
                     <img src="medical/team/Dr.-Faraz-Khalid.png">
                     <h3>Dr. Sarah Ahmed</h3>
                     <h4>Specialist in General Dentistry</h4>
-                    <input type="radio" id="docter4" name="accordion">
-                    <label for="docter4">View More <i class="fa fa-plus"></i>
+                    <input type="radio" id="dr4" name="accordion">
+                    <label for="dr4">View More <i class="fa fa-plus"></i>
                     </label>
                     <div class="docter-detail">
                         <p>Our team of experienced dentists is dedicated to providing the highest quality of care for
@@ -310,8 +424,8 @@
                     <img src="medical/team/Dr.-Faraz-Khalid.png">
                     <h3>Dr. Sarah Ahmed</h3>
                     <h4>Specialist in General Dentistry</h4>
-                    <input type="radio" id="docter5" name="accordion">
-                    <label for="docter5">View More <i class="fa fa-plus"></i>
+                    <input type="radio" id="dr5" name="accordion">
+                    <label for="dr5">View More <i class="fa fa-plus"></i>
                     </label>
                     <div class="docter-detail">
                         <p>Our team of experienced dentists is dedicated to providing the highest quality of care for
@@ -324,8 +438,8 @@
                     <img src="medical/team/Dr.-Faraz-Khalid.png">
                     <h3>Dr. Sarah Ahmed</h3>
                     <h4>Specialist in General Dentistry</h4>
-                    <input type="radio" id="docter3" name="accordion">
-                    <label for="docter3">View More <i class="fa fa-plus"></i>
+                    <input type="radio" id="dr6" name="accordion">
+                    <label for="dr6">View More <i class="fa fa-plus"></i>
                     </label>
                     <div class="docter-detail">
                         <p>Our team of experienced dentists is dedicated to providing the highest quality of care for
@@ -338,8 +452,8 @@
                     <img src="medical/team/Dr.-Faraz-Khalid.png">
                     <h3>Dr. Sarah Ahmed</h3>
                     <h4>Specialist in General Dentistry</h4>
-                    <input type="radio" id="docter3" name="accordion">
-                    <label for="docter3">View More <i class="fa fa-plus"></i>
+                    <input type="radio" id="dr7" name="accordion">
+                    <label for="dr7">View More <i class="fa fa-plus"></i>
                     </label>
                     <div class="docter-detail">
                         <p>Our team of experienced dentists is dedicated to providing the highest quality of care for
@@ -352,8 +466,8 @@
                     <img src="medical/team/Dr.-Faraz-Khalid.png">
                     <h3>Dr. Sarah Ahmed</h3>
                     <h4>Specialist in General Dentistry</h4>
-                    <input type="radio" id="docter3" name="accordion">
-                    <label for="docter3">View More <i class="fa fa-plus"></i>
+                    <input type="radio" id="dr8" name="accordion">
+                    <label for="dr8">View More <i class="fa fa-plus"></i>
                     </label>
                     <div class="docter-detail">
                         <p>Our team of experienced dentists is dedicated to providing the highest quality of care for
@@ -381,9 +495,9 @@
 
             </div>
 
-            
-                <img src="medical/about-team.jpg" alt="">
-         
+
+            <img src="medical/about-team.jpg" alt="">
+
         </section>
         <section class="contact-us-container body-container">
             <div class="heading-container">
@@ -445,7 +559,8 @@
         <div class="footer-container body-container">
             <div class="footer-section logo-section">
                 <h2>Dental Pearl</h2>
-                <p>we are dedicated to providing exceptional dental care in a warm and welcoming environment. Our team
+                <p style="text-align: left;">we are dedicated to providing exceptional dental care in a warm and
+                    welcoming environment. Our team
                     of experienced professionals is committed to ensuring your comfort and delivering the highest
                     quality treatments tailored to your unique needs.</p>
             </div>
@@ -463,6 +578,7 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
