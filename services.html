@@ -17,22 +17,238 @@
 
 
     <title>Dental Pearl</title>
-    <!-- <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            document.addEventListener("contextmenu", function(event) {
-                event.preventDefault();
-            });
-        });
-    </script> -->
-    
+    <style>
+        .content h1,
+        p {
+            text-align: center;
+        }
+
+        .content p {
+            font-size: 20px;
+        }
+
+        .service-heading-container {
+            height: 350px;
+            background: linear-gradient(-45deg, rgba(0, 0, 0, 0.144), #0101b742, rgba(0, 0, 0, 0.22)), url(medical/service/header.jpg)no-repeat top center/cover;
+            ;
+        }
+
+        .service-body-container h2 {
+            font-size: 50px;
+            margin: 10% 0px;
+            color: #000032;
+            letter-spacing: -2px;
+        }
+
+        .our-service {
+            margin: 5% auto;
+            width: 800px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .our-service p {
+            text-align: left;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: center;
+            margin: 0px 10px;
+        }
+
+        .section img {
+            width: 15%;
+            max-width: 100%;
+            margin: 10px 0px;
+        }
+
+        .section h3 {
+            padding: 10px 0px;
+        }
+
+        .section p {
+            padding: 10px 0px;
+            color: gray;
+        }
 
 
+        .section p {
+            text-align: left;
+        }
+
+        /* Service */
+        .Services{
+            height: auto;
+        }
+       .services-cards{
+             margin: 20px 0px;
+        }
+        
+
+
+
+
+
+        .about-service {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* margin: 10% 0; */
+            height: 50vh;
+            margin: 10% auto;
+
+
+        }
+
+        .about-service .content {
+            padding: 20px;
+        }
+
+
+        .about-service .content h1 {
+            text-align: left;
+            line-height: 55px;
+            font-size: 45px;
+        }
+
+        .about-service .content p {
+            text-align: left;
+            font-size: 18px;
+        }
+
+        .about-service img {
+            max-width: 50%;
+
+
+        }
+        
+
+
+        /* Responsive Style  */
+
+
+
+        @media (max-width:980px) {
+            .content p {
+                font-size: 16px;
+            }
+
+            .our-service {
+                width: auto;
+                padding: 20px;
+            }
+
+            .our-service p {
+                font-size: 16px;
+            }
+
+            .section h4 {
+                font-size: 15px;
+            }
+
+            .section p {
+                font-size: 14px;
+            }
+
+            .service-body-container h2 {
+                font-size: 30px;
+                padding: 20px;
+
+            }
+
+            .about-service {
+                flex-direction: column-reverse;
+                margin: 20% auto;
+            }
+
+            .about-service .content {
+                padding: 0px 15px;
+            }
+
+            .about-service img {
+                max-width: 100%;
+                padding: 0px 15px;
+            }
+
+            .about-service .content h1 {
+                text-align: left;
+                line-height: 35px;
+                font-size: 35px;
+            }
+
+            .about-service .content p {
+                font-size: 16px;
+            }
+
+
+        }
+
+
+        @media(max-width: 750px) {
+            .service-heading-container {
+                height: 250px;
+            }
+
+            .our-service p {
+                font-size: 14px;
+            }
+
+            .about-service .content {
+                padding: 20px 40px;
+            }
+
+            .about-service .content h1 {
+
+                line-height: 30px;
+                font-size: 25px;
+            }
+
+            .about-service .content p {
+                font-size: 16px;
+
+            }
+
+
+
+        }
+
+        @media (max-width:400px) {
+            .service-heading-container {
+                height: 150px;
+            }
+
+            .content p {
+                font-size: 13px;
+            }
+
+            .about-service {
+                margin-top: 0;
+                margin-bottom: 20%;
+            }
+
+            .about-service .content p {
+                font-size: 13px;
+
+            }
+
+            .about-service .content {
+                padding: 0px 15px;
+            }
+
+            .about-service img {
+                padding: 0px 15px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
     <nav>
-        <div class="logo"><img src="medical/1.jpg"></div>
+        <div class="logo"><a href="index.html"><img src="medical/1.jpg"></a></div>
 
         <div class="hamburger" data-state="closed">
             <span></span>
@@ -76,34 +292,29 @@
 
         </div>
     </nav>
-
     <main>
-        <header class="header body-container">
+        <header class="header service-body-container body-container">
             <div class="content">
                 <h1>
-                    Welcome to Pearl Dental Care
-                    Your Smile, Our Commitment
+                    Exceptional <br>Dental Services
                 </h1>
-                <p>Comprehensive Dental Care for the Whole Family</p>
-                <div class="button">
-                    <a href="">Book an Appointment</a>
-                    <a href="services.html">Services</a>
-                </div>
+                <p>We Offer A Cmprehensive Range Of Dental Services To Cater To All Your Oral Health Needs</p>
 
-            </div>
-
-            <div class="img">
-                <img src="medical/3.jpg" alt="">
             </div>
         </header>
-
-        <section class="why-choose-us body-container">
-            <div class="heading-container">
-                <p>Why Choose Us?</p>
-                <h2>Compassionate Care,<br> Exceptional Results</h2>
-
+        <section class="service-body-container body-container">
+            <div class="heading-container service-heading-container">
             </div>
-            <div class="sections">
+            <div class="our-service">
+                <p>At Dental Pearl, we are dedicated to providing top-notch dental care tailored to meet
+                    your individual needs. Our comprehensive services include routine cleanings, advanced cosmetic
+                    procedures, and emergency care, all delivered by our skilled and compassionate team. We use
+                    state-of-the-art technology to ensure your comfort and the highest quality of treatment. </p>
+            </div>
+            <h2>Why Choose Services
+                <br>From Dental Pearl
+            </h2>
+            <div class="sections ">
                 <div class="section">
                     <img src="medical/care.png">
                     <h3>Expert Care</h3>
@@ -124,6 +335,7 @@
 
 
             </div>
+
         </section>
         <section class="Services">
             <div class="body-container">
@@ -158,111 +370,60 @@
                             replacing missing teeth and enhancing your oral function.</p>
                         <a href="">Learn More</a>
                     </div>
-                    
-                  
-                </div>
-                
-            </div>
-        </section>
-        <section class="team-container body-container">
-            <h2>Meet Our Team</h2>
-            <div class="team-members">
-                <div class="team-card">
-                    <img src="medical/docter1.jpg">
-                    <h3>Dr. Sara Khan</h3>
-                    <strong>Senior Cosmetic Dentist</strong>
-                    <a href="team.html">View More</a>
-                    
 
                 </div>
-                <div class="team-card">
-                    <img src="medical/dr1.jpg">
-                    <h3>Dr. Usman Ali</h3>
-                    <strong>Senior Orthodontist</strong>
-                    <a href="team.html">View More</a>
-                   
-
-                </div>
-                <div class="team-card">
-                    <img src="medical/dr3.jpg">
-                    <h3>Dr. Ahmed Siddiqui</h3>
-                    <strong>Chief Dental Surgeon</strong>
-                    <a href="team.html">View More</a>
-                   
-
-                </div>
-            </div>
-        </section>
-        <section class="testimonial ">
-            <h1>What Our Patients Says About Us</h1>
-            <div class="main-testimonial">
-                <div class="slider">
-                    <div class="slide-row" id="slide-row">
-                        <div class="slide-col">
-                            <div class="feedback-content">
-                                <p>The team at Dental Pearl is amazing! They made me feel so comfortable
-                                </p>
-                                <h2>Emily S.</h2>
-
-                            </div>
-                            <!-- <div class="hero">
-                                <img src="https://user-images.githubusercontent.com/13468728/234031693-6bbaba7d-632c-4d7d-965f-75a76a549ce2.jpg"
-                                    alt="avatar">
-                            </div> -->
-                        </div>
-
-                        <div class="slide-col">
-                            <div class="feedback-content">
-                                <p>I love the friendly atmosphere and the professional care I receive every time I
-                                    visit.</p>
-                                <h2>Sophia L.</h2>
-                                <!-- <p>Treymont Inc.</p> -->
-                            </div>
-                            <!-- <div class="hero">
-                                <img src="https://user-images.githubusercontent.com/13468728/234031617-2dfb19ea-01d0-4370-b63b-bb6bdfb4f78e.jpg"
-                                    alt="avatar">
-                            </div> -->
-                        </div>
-
-                        <div class="slide-col">
-                            <div class="feedback-content">
-                                <p>Dental Pearl transformed my dental experience. The staff is friendly, and the care is
-                                    top-notch</p>
-                                <h2>Charlie</h2>
-
-                            </div>
-                            <!-- <div class="hero">
-                                <img src="https://user-images.githubusercontent.com/13468728/234031646-10533999-39e5-4c7b-ab54-d0299b13ce74.jpg"
-                                    alt="avatar">
-                            </div> -->
-                        </div>
-
-                        <div class="slide-col">
-                            <div class="feedback-content">
-                                <p>The best dental care I've ever received! The team at Dental Pearl truly cares about
-                                    their patients.</p>
-                                <h2>Sarah</h2>
-                                <!-- <p>Zara Inc.</p> -->
-                            </div>
-                            <!-- <div class="hero">
-                                <img src="https://github.com/ecemgo/ecemgo/assets/13468728/55116c98-5f9a-4b0a-9fdb-4911b52d5ef3"
-                                    alt="avatar">
-                            </div> -->
-                        </div>
-
+                <div class="services-cards">
+                    <div class="card">
+                        <img src="medical/stethoscope-medical-tool.png">
+                        <h3>Routine Check-ups</h3>
+                        <p> Ensure your oral health with regular dental check-ups. Our thorough examinations help detect
+                            issues early and keep your smile bright and healthy</p>
+                        <a href="">Learn More</a>
                     </div>
-                </div>
+                    <div class="card">
+                        <img src="medical/sparkler.png">
+                        <h3>Teeth Whitening</h3>
+                        <p>Achieve a dazzling smile with our professional teeth whitening services. Remove stains and
+                            brighten your teeth for a more confident you.</p>
+                        <a href="">Learn More</a>
+                    </div>
 
-                <div class="indicator">
-                    <span class="btn active"></span>
-                    <span class="btn"></span>
-                    <span class="btn"></span>
-                    <span class="btn"></span>
+                    <div class="card">
+                        <img src="medical/clean.png">
+                        <h3>Orthodontics</h3>
+                        <p> Straighten your teeth with our orthodontic solutions, including braces and Invisalign. We
+                            help you achieve a beautifully aligned smile.</p>
+                        <a href="">Learn More</a>
+                    </div>
+                    <div class="card">
+                        <img src="medical/wrench-tool.png">
+                        <h3>Dental Implants</h3>
+                        <p>Restore your smile with our durable and natural-looking dental implants. Perfect for
+                            replacing missing teeth and enhancing your oral function.</p>
+                        <a href="">Learn More</a>
+                    </div>
+
                 </div>
             </div>
         </section>
+        <section class="about-service service-body-container body-container">
+            <div class="content">
+                <h1>
+                    Our Commitment to Excellence
+                </h1>
+                <p>At Dental Pearl, Our team is not only skilled but also deeply committed to providing
+                    compassionate and individualized care. We continuously strive to create a welcoming environment
+                    where every patient feels valued and understood.
+
+                </p>
 
 
+            </div>
+
+
+            <img src="medical/about-team.jpg" alt="">
+
+        </section>
         <section class="contact-us-container body-container">
             <div class="heading-container">
                 <p>Contact Us</p>
@@ -343,8 +504,5 @@
         </div>
     </footer>
     <script src="script.js"></script>
-    <script src="testimonial.js"></script>
 
 </body>
-
-</html>

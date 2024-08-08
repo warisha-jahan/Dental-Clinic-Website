@@ -156,6 +156,9 @@
     .services-cards {
         padding: 10px 20px;
     }
+    .card p {
+      text-align: left;
+    }
 
     /* Team */
     .team-container h2 {
@@ -436,6 +439,7 @@
 
     .card p {
         font-size: 13px;
+        text-align: left;
     }
 
     .card a {
@@ -585,6 +589,7 @@
 
     .step p {
         font-size: 13px;
+        text-align: left;
     }
 
 
