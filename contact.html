@@ -16,17 +16,20 @@
     <link rel="stylesheet" href="responsive.css">
     <style>
         .content h1 {
-            text-align: center;
+            text-align: left;
         }
 
         .content p {
             font-size: 20px;
+            text-align: left;
         }
 
         .contact-heading-container {
             height: 350px;
-            background: linear-gradient(-45deg, rgba(0, 0, 0, 0.144), #0101b742, rgba(0, 0, 0, 0.22)), url(medical/contact/header.jpg)no-repeat top center/cover;
-            ;
+        }
+
+        .contact-heading-container iframe {
+            width: 100%;
         }
 
         .contact-body-container h2 {
@@ -35,23 +38,28 @@
             color: #000032;
             letter-spacing: -2px;
         }
+
         .contact-body-container .location-pera {
             font-size: 20px;
             margin: 2px 0px;
             color: #000032;
             width: 45%;
-           
-        }
-
-        .contact-details {
-            display: grid;
-            grid-template-columns: repeat(2, 250px);
-            justify-items: center;
 
         }
 
-        .contact-details p {
-            font-size: 17px;
+        .ourContact-details {
+           display: flex;
+           justify-content: center;
+          
+
+
+        }
+
+        .ourContact-details p {
+            font-size: 15px;
+            margin: 0 35px;
+            color: #000032;
+            font-weight: bold;
         }
 
         .our-contact {
@@ -60,9 +68,97 @@
             text-align: center;
             font-size: 18px;
         }
-        .sections .section{
+
+        .sections .section {
             width: 45%;
             color: #000032;
+        }
+
+
+
+
+        /* Responsive Design */
+
+        @media (max-width:980px) {
+            .content{
+                margin: 0 auto;
+            }
+            .content h1 {
+            text-align: center;
+        }
+
+            .content p {
+                font-size: 16px;
+
+            }
+
+
+            .ourContact-details {
+                flex-direction: column;
+               
+              
+               
+            }
+            .ourContact-details ,.call ,.Email{
+                margin: 5px 0px;
+            }
+
+            .ourContact-details p {
+                font-size: 15px;
+                text-align: center;
+            }
+
+            .section h4 {
+                font-size: 15px;
+            }
+
+            .section p {
+                font-size: 14px;
+            }
+
+            .contact-body-container h2 {
+                font-size: 30px;
+                padding: 20px;
+
+            }
+
+            .contact-body-container .location-pera {
+                font-size: 15px;
+                margin-bottom: 25px;
+                padding: 20px 20px;
+                width: auto;
+
+            }
+
+            
+
+        }
+
+        @media(max-width: 750px) {
+            .contact-heading-container {
+                height: 250px;
+            }
+
+            .ourContact-details p {
+                font-size: 13px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width:400px) {
+            .contact-heading-container {
+                height: 150px;
+            }
+
+            .content p {
+                font-size: 13px;
+            }
+
+            .ourContact-details p {
+                font-size: 12px;
+                text-align: center;
+            }
+
         }
     </style>
 </head>
@@ -85,7 +181,7 @@
                         <li><a href="">General Dentistry <i class="fa fa-caret-right"></i></a>
                             <ul class="more-drop">
                                 <li><a href="">Routine Check-ups</a></li>
-                                <li><a href="">Cleanings</a></li>
+                                <li><a href="">Root Canals</a></li>
                                 <li><a href="">Fillings</a></li>
                             </ul>
 
@@ -119,7 +215,7 @@
                 <h1>
                     We’re here to help
                 </h1>
-                <div class="contact-details">
+                <div class="ourContact-details">
                     <div class="call">
                         <p>Call Us At</p>
                         <p>+92 123 4567890</p>
@@ -134,28 +230,108 @@
         </header>
         <section class="contact-body-container body-container">
             <div class="heading-container contact-heading-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.300507015423!2d74.32037337624128!3d31.48842284871854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905d1a4622567%3A0x385cd32bec2c80e1!2s87%2C%20H%20Block%20Model%20Town%2C%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1723953100647!5m2!1sen!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <h2>Our locations</h2>
-            <p class="location-pera">We have offices throughout the East Coast, Midwest, and South — we’d love to show you around sometime.
-                Don’t see an office in your area? We have the power to support your business, no matter the location.
+            <p class="location-pera">Our network of offices ensures that we're always within reach, offering
+                personalized service and local expertise wherever you are. Whether you need in-person consultations or
+                remote support, our team is ready to assist you with tailored solutions that meet your specific needs
             </p>
             <div class="sections ">
                 <div class="section">
-                    <h1>United Kingdom</h1>
-                    <h3>London</h3>
-                    <p>85 Great Portland Street, London, England, W1W 7LT
-                        (44) 7532 723884</p>
+                  
+                    <h3>Karachi</h3>
+                    <p>15 Block 5, Clifton, Karachi, Sindh</p>
                 </div>
                 <div class="section">
-                    <h1>Pakistan</h1>
+                  
                     <h3>Lahore</h3>
-                    <p>85 Great Portland Street, London, England, W1W 7LT (44) 7532 723884</p>
+                    <p>87, H Block Model Town, Lahore, Punjab</p>
                 </div>
             </div>
         </section>
-       
-    </main>
+        <section class="contact-us-container body-container">
+            <div class="heading-container">
+                <p>Contact Us</p>
+                <h2>Ready to achieve a healthier, <br>brighter smile?</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-details">
+                    <p>We’re happy to answer any questions you may have and help you determine which of our services
+                        best
+                        fit your needs.</p>
+                    <strong>Call Us At +1-234-567-8901</strong>
+                    <h3>What Happens Next?</h3>
+                    <div class="steps-container">
+                        <div class="step">
+                            <h2>1</h2>
+                            <p>Comprehensive Dental Exam</p>
+                        </div>
+                        <div class="step">
+                            <h2>2</h2>
+                            <p>Discuss Treatment Options</p>
+                        </div>
+                        <div class="step">
+                            <h2>3</h2>
+                            <p>Begin Your Treatment</p>
+                        </div>
+                    </div>
 
+                </div>
+                <div class="contact-form">
+                    <h2>Schedule an Appointment</h2>
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                    <input type="email" name="your-email" id="email" placeholder="Your Email">
+                    <input type="text" placeholder="Phone">
+                    <select name="services" id="services">
+                        <option value="">Select Options</option>
+                        <option value="Routine Check-ups">Routine Check-ups</option>
+                        <option value="Teeth Whitening">Teeth Whitening</option>
+                        <option value="Orthodontics">Orthodontics</option>
+                        <option value="Dental Implants">Dental Implants</option>
+                        <option value="Pediatric Dentistry">Pediatric Dentistry</option>
+                        <option value="Cleanings">Cleanings</option>
+                        <option value="Fillings">Fillings</option>
+                        <option value="Invisalign">Invisalign</option>
+                        <option value="Invisalign">Crowns</option>
+                        <option value="Invisalign">Bridges</option>
+                        <option value="Invisalign">Implants</option>
+                    </select>
+                    <button type="submit">Submit</button>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-container body-container">
+            <div class="footer-section logo-section">
+                <h2>Dental Pearl</h2>
+                <p>we are dedicated to providing exceptional dental care in a warm and welcoming environment. Our team
+                    of experienced professionals is committed to ensuring your comfort and delivering the highest
+                    quality treatments tailored to your unique needs.</p>
+            </div>
+            <div class="footer-section contact-footer-section">
+                <h3>Contact Us</h3>
+                <li>Lahore, Pakistan</li>
+                <li>+92 123 4567890</li>
+                <li>info@dentalpearl.com</li>
+            </div>
+            <div class="footer-section services-footer-section">
+                <h3>Services</h3>
+                <li><a href="">Routine Check-ups</a></li>
+                <li><a href="">Invisalign</a></li>
+                <li><a href="">Teeth Whitening</a></li>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
