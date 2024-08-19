@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../testimonial.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <title>Dental Pearl</title>
+    <style>
+        /* For Header */
+        .header {
+            background: linear-gradient(-45deg, black, #0101b7, black);
+        }
+
+        .content h1 {
+            color: white;
+        }
+
+        .content h3 {
+            font-size: 25px;
+            color: white;
+        }
+
+        .content p {
+            font-size: 18px;
+            width: 45%;
+        }
+
+        .content .button a {
+            background-color: white;
+            color: black;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .section-1{
+            margin-top: 5%;
+        }
+        .section-1 .content h2{
+            color: #000032;
+           
+        }
+        .section-1 .content p{
+            font-weight: 100;
+            font-size: 15px;
+            width: auto;
+        }
+        
+        .content ul{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        }
+
+        .content ul li{
+            text-align: left;
+            color: gray;
+            margin: 20px;
+            font-size: 14px;
+           
+            
+        }
+        .content ul li i{
+            color: #0101b7;
+            font-size: 25px;
+            margin: 0px 10px;
+        }
+        .content ul li b{
+            text-align: left;
+            color: #000032;
+            font-size: 18px;
+        }
+        .content ul li p{
+            margin: 0px 45px;
+        }
+        .section-1 .content{
+            width: 60%;
+        }
+        .section-1 .img{
+            width: 40%;
+        }
+        .section-1 img{
+            width: 80%;
+            clip-path: none;
+            margin: 0px 40px;
+            box-shadow: none;
+        }
+     
+
+
+
+
+
+        /* Responsive Design */
+        @media (max-width:980px) {
+            .header {
+                height: 40vh;
+            }
+
+            .content h3 {
+                font-size: 20px;
+                color: white;
+            }
+
+            .content p {
+                font-size: 15px;
+                width: auto;
+            }
+
+            .content a {
+                padding: 8px 20px;
+                font-size: 13px;
+            }
+            
+        .flex-container {
+           flex-direction: column;
+            
+        }
+        .section-1 .content{
+            width:auto;
+        }
+        .section-1 .content h2{
+           font-size: 20px;
+        }
+       
+        .section-1 .img img{
+            max-width: 100%;
+        
+        }
+        .section-1 .content ul li{
+            text-align: left;
+            color: gray;
+            margin: 20px 0px;
+            font-size: 14px;
+            
+        }
+        }
+
+        @media(max-width: 750px) {
+            .content h3 {
+                font-size: 18px;
+                color: white;
+            }
+
+            .content p {
+                font-size: 12px;
+
+            }
+
+            .content a {
+                padding: 8px 27px;
+            }
+        }
+
+        @media (max-width:400px) {
+            .content h3 {
+                font-size: 15px;
+                color: white;
+            }
+
+            .content p {
+                font-size: 10px;
+
+            }
+
+            .content a {
+                padding: 6px 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo"><img src="../medical/1.jpg"></div>
+
+        <div class="hamburger" data-state="closed">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li>
+                    <a href="../services.html">Services <i class="fa fa-caret-down"></i></i></a>
+                    <ul class="dropdown">
+                        <li><a href="">General Dentistry <i class="fa fa-caret-right"></i></a>
+                            <ul class="more-drop">
+                                <li><a href="services/checkups.html">Routine Check-ups</a></li>
+                                <li><a href="">Cleanings</a></li>
+                                <li><a href="">Fillings</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a href="">Cosmetic Dentistry <i class="fa fa-caret-right"></i></a>
+                            <ul class="more-drop">
+                                <li><a href="">Teeth Whitening</a></li>
+                                <li><a href="">Veneers</a></li>
+                                <li><a href="">Invisalign</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Restorative Dentistry <i class="fa fa-caret-right"></i></a>
+                            <ul class="more-drop">
+                                <li><a href="">Crowns</a></li>
+                                <li><a href="">Bridges</a></li>
+                                <li><a href="">Implants</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+                <li><a href="../team.html">Our Team</a></li>
+                <li><a href="../contact.html">Contact Us</a></li>
+            </ul>
+
+        </div>
+    </nav>
+    <main>
+        <header class="header">
+            <div class="content body-container">
+                <h1>
+                    Routine Check-ups
+                </h1>
+                <h3>Your Gateway to a Healthy Smile</h3>
+                <p style="color: white;">At Dental Pearl, we believe that preventive care is the cornerstone of a
+                    healthy
+                    smile. Our Routine Checkups are designed to keep your teeth and gums in excellent condition,
+                    ensuring that any potential issues are detected and treated early.</p>
+                <div class="button">
+                    <a href="">Shedule Free Consultaion</a>
+                </div>
+
+            </div>
+
+            <div class="img">
+                <img src="medical/3.jpg" alt="">
+            </div>
+        </header>
+        <section class="section-1 body-container flex-container">
+            <div class="content">
+                <h2>What to Expect During Your Checkup</h2>
+                <p>Your routine checkup at Dental Pearl includes a comprehensive examination of your
+                    teeth, gums, and mouth. Our experienced dentists will:</p>
+                <ul>
+                    
+                    <li><i class="fa fa-check"></i><b>Thorough Examination:</b><br><p>We conduct a thorough examination to detect any signs of tooth
+                        decay, gum disease, or other oral health issues.</p></li>
+                        
+                    <li><i class="fa fa-check"></i><b>Thorough Examination:</b><br><p>We conduct a thorough examination to detect any signs of tooth
+                        decay, gum disease, or other oral health issues.</p></li>
+
+                        
+                    <li><i class="fa fa-check"></i><b>Thorough Examination:</b><br><p>We conduct a thorough examination to detect any signs of tooth
+                        decay, gum disease, or other oral health issues.</p></li>
+
+                        
+                    <li><i class="fa fa-check"></i><b>Thorough Examination:</b><br><p>We conduct a thorough examination to detect any signs of tooth
+                        decay, gum disease, or other oral health issues.</p></li>
+                   
+                </ul>
+
+            </div>
+
+            <div class="img">
+                <img src="../medical/routine-checkups/checkups.jpg" alt="">
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
