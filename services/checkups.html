@@ -46,60 +46,114 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            
+
         }
-        .section-1{
-            margin-top: 5%;
+
+        .section-1 {
+            margin: 10% auto;
+
         }
-        .section-1 .content h2{
+
+        .section-1 .content {
+            width: 150%;
+
+        }
+
+
+        .section-1 .content h2 {
             color: #000032;
-           
+            margin: 20px;
+
+
         }
-        .section-1 .content p{
+
+        .section-1 .content p {
             font-weight: 100;
             font-size: 15px;
             width: auto;
-        }
-        
-        .content ul{
-            display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            margin: 20px;
         }
 
-        .content ul li{
+        .content ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        .content ul li {
             text-align: left;
             color: gray;
-            margin: 20px;
+            margin: 20px 10px;
             font-size: 14px;
-           
-            
+
+
         }
-        .content ul li i{
+
+        .content ul li i {
             color: #0101b7;
             font-size: 25px;
             margin: 0px 10px;
         }
-        .content ul li b{
+
+        .content ul li b {
             text-align: left;
             color: #000032;
             font-size: 18px;
         }
-        .content ul li p{
+
+        .content ul li p {
             margin: 0px 45px;
         }
-        .section-1 .content{
-            width: 60%;
-        }
-        .section-1 .img{
-            width: 40%;
-        }
-        .section-1 img{
-            width: 80%;
-            clip-path: none;
+
+        .section-1 img {
+            max-width: 80%;
             margin: 0px 40px;
-            box-shadow: none;
+
         }
-     
+
+
+        /* Section 2  */
+        .section-2 {
+            margin: 10% auto;
+        }
+
+        .section-2 .content {
+            padding: 50px;
+        }
+
+        .section-2 img {
+            max-width: 50%;
+        }
+
+        .section-2 .content p {
+            width: auto;
+        }
+
+        .section-2 h2 {
+            font-size: 30px;
+            color: #000032;
+            margin: 20px;
+        }
+
+        .section-2 p {
+            width: auto;
+            margin: 20px;
+
+        }
+
+        /* Section 3 */
+        .section-3 {
+            align-items: flex-start;
+        }
+
+        .section-3 .content {
+            width: auto;
+
+        }
+
+        .section-3 .content h2 {
+            font-size: 40px;
+        }
+
 
 
 
@@ -125,30 +179,81 @@
                 padding: 8px 20px;
                 font-size: 13px;
             }
-            
-        .flex-container {
-           flex-direction: column;
-            
+
+            .flex-container {
+                flex-direction: column-reverse;
+
+            }
+
+
+
+            .section-1 .content {
+                width: auto;
+            }
+
+            .section-1 .content h2 {
+                font-size: 30px;
+
+            }
+
+            .section-1 img {
+
+                align-self: right;
+                padding: 20px;
+
+
+            }
+
+            .section-1 .content ul li {
+                text-align: left;
+                color: gray;
+                margin: 10px 0px;
+                font-size: 14px;
+
+            }
+
+            /* Section 2 */
+            .section-2 {
+                margin: 0px 0px;
+            }
+
+            .section-2 .content h2 {
+                font-size: 30px;
+            }
+
+            .section-2 img {
+                max-width: 100%;
+                padding: 30px;
+
+            }
+
+            .section-2 .content {
+                padding: 20px;
+            }
+
+            .section-2 .content p {
+                font-size: 15px;
+            }
+
+            /* Section 3 */
+
+
+            .section-3 .content {
+                width: auto;
+
+            }
+
+            .section-3 .content h2 {
+                font-size: 30px;
+            }
+
+            .content img {
+                width: 70%;
+            }
+
         }
-        .section-1 .content{
-            width:auto;
-        }
-        .section-1 .content h2{
-           font-size: 20px;
-        }
-       
-        .section-1 .img img{
-            max-width: 100%;
-        
-        }
-        .section-1 .content ul li{
-            text-align: left;
-            color: gray;
-            margin: 20px 0px;
-            font-size: 14px;
-            
-        }
-        }
+
+
 
         @media(max-width: 750px) {
             .content h3 {
@@ -257,31 +362,124 @@
                 <p>Your routine checkup at Dental Pearl includes a comprehensive examination of your
                     teeth, gums, and mouth. Our experienced dentists will:</p>
                 <ul>
-                    
-                    <li><i class="fa fa-check"></i><b>Thorough Examination:</b><br><p>We conduct a thorough examination to detect any signs of tooth
-                        decay, gum disease, or other oral health issues.</p></li>
-                        
-                    <li><i class="fa fa-check"></i><b>Thorough Examination:</b><br><p>We conduct a thorough examination to detect any signs of tooth
-                        decay, gum disease, or other oral health issues.</p></li>
 
-                        
-                    <li><i class="fa fa-check"></i><b>Thorough Examination:</b><br><p>We conduct a thorough examination to detect any signs of tooth
-                        decay, gum disease, or other oral health issues.</p></li>
+                    <li><i class="fa fa-check"></i><b>Thorough Examination:</b><br>
+                        <p>We conduct a thorough examination to detect any signs of tooth
+                            decay, gum disease, or other oral health issues.</p>
+                    </li>
 
-                        
-                    <li><i class="fa fa-check"></i><b>Thorough Examination:</b><br><p>We conduct a thorough examination to detect any signs of tooth
-                        decay, gum disease, or other oral health issues.</p></li>
-                   
+                    <li><i class="fa fa-check"></i><b>Thorough Examination:</b><br>
+                        <p>We conduct a thorough examination to detect any signs of tooth
+                            decay, gum disease, or other oral health issues.</p>
+                    </li>
+
+
+                    <li><i class="fa fa-check"></i><b>Thorough Examination:</b><br>
+                        <p>We conduct a thorough examination to detect any signs of tooth
+                            decay, gum disease, or other oral health issues.</p>
+                    </li>
+
+
+                    <li><i class="fa fa-check"></i><b>Thorough Examination:</b><br>
+                        <p>We conduct a thorough examination to detect any signs of tooth
+                            decay, gum disease, or other oral health issues.</p>
+                    </li>
+
                 </ul>
 
             </div>
 
-            <div class="img">
+            <div>
                 <img src="../medical/routine-checkups/checkups.jpg" alt="">
             </div>
         </section>
-    </main>
+        <section class="section-2 body-container flex-container">
+            <img src="../medical/routine-checkups/checkups timing.jpg" alt="">
+            <div class="content">
+                <h2>
+                    How Often Should You Get a Checkup?
+                </h2>
+                <p>Choosing Dental Pearl means investing in a healthier, brighter smile. Our commitment
+                    to excellence and patient satisfaction sets us apart. Explore our services below and see how we can
+                    help you achieve and maintain the smile you deserve.
+                </p>
 
+
+            </div>
+        </section>
+        <section class="section-1 section-2 section-3 body-container flex-container">
+            <div class="content">
+                <img src="../medical/routine-checkups/right-arrow.png" alt="">
+                <h2>
+                    Book Your Checkup Today
+                </h2>
+                <p>Don’t wait until you have a dental problem to visit us. Regular checkups are your best defense
+                    against oral health issues. Schedule your routine checkup today at [Your Dental Practice Name], and
+                    let us help you maintain a bright, healthy smile for years to come.
+                </p>
+
+
+
+
+            </div>
+            <div class="content">
+                <ul>
+
+                    <li><i class="fa fa-check"></i><b>Thorough Examination:</b><br>
+                        <p>We conduct a thorough examination to detect any signs of tooth
+                            decay, gum disease, or other oral health issues.</p>
+                    </li>
+
+                    <li><i class="fa fa-check"></i><b>Thorough Examination:</b><br>
+                        <p>We conduct a thorough examination to detect any signs of tooth
+                            decay, gum disease, or other oral health issues.</p>
+                    </li>
+
+
+                    <li><i class="fa fa-check"></i><b>Thorough Examination:</b><br>
+                        <p>We conduct a thorough examination to detect any signs of tooth
+                            decay, gum disease, or other oral health issues.</p>
+                    </li>
+
+
+                    <li><i class="fa fa-check"></i><b>Thorough Examination:</b><br>
+                        <p>We conduct a thorough examination to detect any signs of tooth
+                            decay, gum disease, or other oral health issues.</p>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-container body-container">
+            <div class="footer-section logo-section">
+                <h2>Dental Pearl</h2>
+                <p>we are dedicated to providing exceptional dental care in a warm and welcoming environment. Our team
+                    of experienced professionals is committed to ensuring your comfort and delivering the highest
+                    quality treatments tailored to your unique needs.</p>
+            </div>
+            <div class="footer-section contact-footer-section">
+                <h3>Contact Us</h3>
+                <li>Lahore, Pakistan</li>
+                <li>+92 123 4567890</li>
+                <li>info@dentalpearl.com</li>
+            </div>
+            <div class="footer-section services-footer-section">
+                <h3>Services</h3>
+                <li><a href="">Routine Check-ups</a></li>
+                <li><a href="">Invisalign</a></li>
+                <li><a href="">Teeth Whitening</a></li>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="testimonial.js"></script>
 </body>
 
 </html>
